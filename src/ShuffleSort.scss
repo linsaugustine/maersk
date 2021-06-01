@@ -1,0 +1,40 @@
+.layout {
+  margin-top: 30px;
+  padding: 5px;
+  min-height: 80vh;
+
+  .layout-right {
+    text-align: center;
+    float: right;
+    min-width: 30%;
+    min-height: 70vh;
+
+    button {
+      background-color: #72c3dc;
+      cursor: pointer;
+      font-size: 0.5rem;
+      width: 50%;
+      height: 40px;
+      margin: 10px;
+      border: none;
+      border-bottom: 5px solid #2b8ead;
+      border-radius: 10px;
+      color: #fff;
+    }
+
+    button:active {
+      transform: translateY(4px);
+    }
+  }
+
+  .layout-left {
+    float: left;
+    background-color: cadetblue;
+    min-width: 70%;
+    min-height: 70vh;
+  }
+
+  .layout-bottom {
+    text-align: center;
+  }
+}

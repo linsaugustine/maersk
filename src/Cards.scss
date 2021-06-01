@@ -1,0 +1,28 @@
+.cards {
+  .row {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .col {
+    color: #fff;
+    padding: 21px;
+    font-size: 30px;
+    text-align: center;
+
+    &.dark-light {
+      background-color: #6f98a8;
+    }
+
+    &.light {
+      background-color: #2b8ead;
+    }
+
+    &.grey {
+      background-color: #bfbfbf;
+    }
+
+    &.dark {
+      background-color: #2f454e;
+    }
+  }
+}
