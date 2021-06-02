@@ -1,0 +1,1 @@
+export default interface item {value: number, color: string}

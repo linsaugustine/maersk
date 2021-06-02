@@ -1,0 +1,40 @@
+.cards-mob {
+  .card-col-left {
+    float: left;
+    width: 5%;
+    height: 40px;
+    margin: 2px;
+
+    &.dark-light {
+      background-color: #6f98a8;
+    }
+
+    &.light {
+      background-color: #2b8ead;
+    }
+
+    &.grey {
+      background-color: #bfbfbf;
+    }
+
+    &.dark {
+      background-color: #2f454e;
+    }
+  }
+
+  .card-col-right {
+    text-align: center;
+    background-color: #efefef;
+    float: left;
+    width: 90%;
+    height: 40px;
+    margin: 2px;
+    padding-top: 10px;
+  }
+
+  .cards-mob::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

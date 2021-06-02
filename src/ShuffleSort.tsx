@@ -1,32 +1,26 @@
 import { useState, useEffect } from 'react'
-import Cards, { item } from "./Cards"
+import Cards from "./Cards"
+import item from "./types"
 import "./ShuffleSort.scss"
 import * as utils from "./utils"
 
-const ShuffleSort = () => {
-    const arr = [ 
-        {value: 9, color: "dark"} , 
-        {value: 8, color: "dark-light"},
-        {value: 7, color: "grey"},
-        {value: 6, color: "grey"},
-        {value: 5, color: "dark"},
-        {value: 4, color: "light"},
-        {value: 3, color: "dark"},
-        {value: 2, color: "light"},
-        {value: 1, color: "dark-light"}
-    ]
+interface Props {
+    arr: item[]
+}
+
+const ShuffleSort: React.FC<Props> = (props) => {
     const [state, setState] = useState<item[]>()
 
     useEffect(() => {
-        setState(utils.shuffleArray(arr))
+        setState(utils.shuffleArray(props.arr))
     }, [])
 
     const handleShuffle = () => {
-        setState(utils.shuffleArray(arr))
+        setState(utils.shuffleArray(props.arr))
     }
 
     const handleSort = () => {
-        setState(utils.sortArray(arr))
+        setState(utils.sortArray(props.arr))
     }
 
     return (

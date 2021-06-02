@@ -1,7 +1,6 @@
 import React from 'react'
 import "./Cards.scss"
-
-export interface item {value: number, color: string}
+import item from "./types"
 
 interface InputProps {
     nums: item[]
