@@ -31,12 +31,17 @@ const ShuffleSort = () => {
 
     return (
         <div className="layout">
-            <div className="layout-right">
-                <button onClick={handleShuffle}>SHUFFLE</button>
-                <button onClick={handleSort}>SORT</button>
+            <div className="header">
+                <h2>Shuffle and Sort</h2>
             </div>
-            <div className="layout-left">
-                {state && <Cards nums={state} rowSize={3}/>}
+            <div className="middle">
+                <div className="layout-left">
+                    {state && <Cards nums={state} rowSize={3}/>}
+                </div>
+                <div className="layout-right">
+                    <button onClick={handleShuffle}>SHUFFLE</button>
+                    <button onClick={handleSort}>SORT</button>
+                </div>
             </div>
             <div className="layout-bottom">
                 <h4>Shuffle and sort by Linson Augustine</h4>

@@ -2,12 +2,13 @@
   .row {
     display: grid;
     grid-template-columns: auto auto auto;
+    align-items: center;
   }
   .col {
     color: #fff;
     padding: 21px;
     font-size: 30px;
-    text-align: center;
+    min-width: 100px;
 
     &.dark-light {
       background-color: #6f98a8;
